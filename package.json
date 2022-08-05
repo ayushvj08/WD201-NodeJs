@@ -1,12 +1,20 @@
 {
   "name": "hello-node",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Ayush Vijayant <ayush.vijayant@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayushvj08/WD201-NodeJs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ayushvj08/WD201-NodeJs/issues"
+  },
+  "homepage": "https://github.com/ayushvj08/WD201-NodeJs#readme",
+  "description": ""
 }
