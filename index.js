@@ -11,7 +11,9 @@ const todoList = () => {
     // Write the date check condition here and return the array of overdue items accordingly.
     // FILL YOUR CODE HERE
     // ..
-    return todos.all.filter((todo) => todo.dueDate < today);
+    return todos.all.filter(
+      (todo) => todo.dueDate < new Date().toISOString().split("T")[0]
+    );
 
     // ..
     // ..
@@ -22,7 +24,9 @@ const todoList = () => {
     // FILL YOUR CODE HERE
     // ..
     // ..
-    return todos.all.filter((todo) => todo.dueDate === today);
+    return todos.all.filter(
+      (todo) => todo.dueDate === new Date().toISOString().split("T")[0]
+    );
     // ..
   };
 
@@ -31,7 +35,9 @@ const todoList = () => {
     // FILL YOUR CODE HERE
     // ..
     // ..
-    return todos.all.filter((todo) => todo.dueDate > today);
+    return todos.all.filter(
+      (todo) => todo.dueDate > new Date().toISOString().split("T")[0]
+    );
     // ..
   };
 
